@@ -67,6 +67,7 @@ in {
   home.sessionVariables = {
     EDITOR = "nvim";
     DEFAULT_BROWSER = "firefox";
+    GIT_EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
