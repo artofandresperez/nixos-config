@@ -118,6 +118,12 @@
   services.spice-vdagentd.enable = true;
 
 
+ nixpkgs.config.permittedInsecurePackages = {[
+  "electron-19.1.0"
+ ];
+};
+
+
 
 
   # List packages installed in system profile. To search, run:
