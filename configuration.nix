@@ -154,6 +154,8 @@
     slack
     zoom-us
     brightnessctl
+    etcher
+
 
 
 
