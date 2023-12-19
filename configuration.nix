@@ -154,6 +154,7 @@
     slack
     zoom-us
     brightnessctl
+    
 
 
 
