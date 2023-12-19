@@ -154,8 +154,6 @@
     slack
     zoom-us
     brightnessctl
-    gh
-    gitkraken
 
 
 
