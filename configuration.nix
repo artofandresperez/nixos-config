@@ -118,10 +118,9 @@
   services.spice-vdagentd.enable = true;
 
 
- nixpkgs.config.permittedInsecurePackages = {[
+ nixpkgs.config.permittedInsecurePackages = [
   "electron-19.1.0"
  ];
-};
 
 
 
