@@ -160,6 +160,7 @@
     zoom-us
     brightnessctl
     etcher
+    nixos-generators
 
 
 
