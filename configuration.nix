@@ -119,7 +119,7 @@
 
 
  nixpkgs.config.permittedInsecurePackages = [
-  "electron-19.1.0"
+  "electron-19.1.9"
  ];
 
 
