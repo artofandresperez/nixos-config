@@ -159,10 +159,6 @@
     slack
     zoom-us
     brightnessctl
-
-
-
-
   ];
   programs.git = {
     enable = true;
@@ -188,7 +184,7 @@
       startx.enable = true;
 
     };
-    videoDrivers = ["nvidiaBeta"];
+    videoDrivers = ["nvidia"];
     
     wacom.enable = true;
   };
@@ -212,9 +208,13 @@
     open = false;
     nvidiaSettings = true;
     prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+
+      };
       intelBusId = "PCI:0:2:0";
       nvidiaBusId = "PCI:1:0:0";
-      sync.enable = true;
     };
 
   };
