@@ -159,6 +159,10 @@
     slack
     zoom-us
     brightnessctl
+    ripgrep
+    mutt
+    lazygit
+
   ];
   programs.git = {
     enable = true;
