@@ -163,6 +163,7 @@
     mutt
     lazygit
     jetbrains-toolbox
+    cmake
 
   ];
   programs.git = {
