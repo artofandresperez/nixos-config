@@ -162,6 +162,7 @@
     ripgrep
     mutt
     lazygit
+    jetbrains-toolbox
 
   ];
   programs.git = {
