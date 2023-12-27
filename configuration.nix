@@ -162,8 +162,9 @@
     ripgrep
     mutt
     lazygit
-    jetbrains-toolbox
     cmake
+    pkgs.jetbrains.clion
+
 
   ];
   programs.git = {
