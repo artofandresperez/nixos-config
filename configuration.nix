@@ -164,6 +164,7 @@
     lazygit
     cmake
     pkgs.jetbrains.clion
+    kalker
 
 
   ];
