@@ -125,5 +125,10 @@ in {
   services.flameshot = {
     enable = true;
   };
+  programs.tmux = {
+    enable = true;
+
+  };
+  }
   
 }
