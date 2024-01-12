@@ -140,7 +140,6 @@
   environment.systemPackages = with pkgs; [
     lynx
     dmenu
-    immersed-vr
     telegram-desktop
     lshw
     pulsemixer
@@ -174,7 +173,36 @@
     lazygit
     cmake
     pkgs.jetbrains.clion
+    # Calculator
     kalker
+    # video player
+    mpv
+    # file usage manager
+    du-dust
+    # file difference viewer
+    diff-so-fancy
+    # task manager cli
+    taskwarrior
+    # time tracking
+    watson
+    # duplicate finder
+    fdupes
+    # file transfer cli
+    croc 
+    # email client
+    mutt
+    # Journaling Cli
+    jrnl
+    # Cli benchmarking tool
+    hyperfine
+    # accounting 
+    hledger
+    # bookmarks manager
+    buku
+    # System Monitor 
+    btop
+
+
 
 
   ];
