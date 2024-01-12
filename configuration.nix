@@ -62,6 +62,13 @@
   (nerdfonts.override {fonts = ["JetBrainsMono"];})
 
   ];
+
+  # ENV Vars
+  
+  environment.variables = {
+    EDITOR = "nvim";
+
+  };
  
   # AUDIO
 
