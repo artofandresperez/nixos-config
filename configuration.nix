@@ -1,4 +1,4 @@
- #this configuration file to define what should be installed on
+#this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 #af
@@ -199,11 +199,7 @@
     du-dust
     # file difference viewer
     diff-so-fancy
-    # task manager cli
-    taskwarrior
     # time tracking
-    watson
-    # duplicate finder
     fdupes
     # file transfer cli
     croc 
@@ -219,18 +215,7 @@
     buku
     # System Monitor 
     btop
-
-
-
-  # setup GIT
-
   ];
-  programs.git = {
-    enable = true;
-    lfs.enable = true;
-
-
-  };
 
   # Setup Steam
 

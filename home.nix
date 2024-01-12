@@ -127,6 +127,30 @@ in {
   };
   programs.tmux = {
     enable = true;
+    extraConfig = "
+    set -g focus-events on
+
+    ";
+
+  };
+  programs.taskwarrior = {
+    enable = true;
+
+
+  };
+  programs.watson = {
+    enable = true;
+  };
+  programs.git = {
+    enable = true;
+    extraConfig = {
+      core = {
+        editor = "nvim";
+      };
+    lfs.enable = true;
+
+
+    };
 
   };
   
