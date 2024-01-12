@@ -20,7 +20,7 @@
 
   #boot 
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "amoeba-laptop-01"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -95,7 +95,7 @@
 
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # Define a user account. 
   users.users.amoeba = {
     isNormalUser = true;
     description = "amoeba";
@@ -128,6 +128,7 @@
   services.spice-vdagentd.enable = true;
 
 
+# Fix electron dependecy for Balena Etcher
  nixpkgs.config.permittedInsecurePackages = [
   "electron-19.1.9"
  ];
@@ -138,24 +139,36 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # CLI browser
     lynx
+    # its dmenu
     dmenu
+    # messaging client 
     telegram-desktop
+    # Information about hardware config
     lshw
+    # audio controll cli
     pulsemixer
+    # File Browser
     vifm
-    bottom 
+    # GPU system process monitor
     nvtop
+    # Open source cg toolset
     blender
+    # Virtual Desktop
     parsec-bin
+    # GUI for XRandR
     arandr
+    # GPU things
     cudatoolkit
     linuxPackages.nvidia_x11
     libGLU
     libGL
+    # wine stuff 
     lutris
     wine
     winetricks
+    # virtualisation software
     qemu
     virt-manager
     virt-viewer
@@ -165,13 +178,18 @@
     win-spice
     gnome.adwaita-icon-theme
     virtiofsd
+    # Work apps
     slack
     zoom-us
+    # control display Brightness
     brightnessctl
+    # Grep stuff
     ripgrep
+    # email client
     mutt
-    lazygit
+    # its cmake
     cmake
+    # clion Cpp ide
     pkgs.jetbrains.clion
     # Calculator
     kalker
@@ -204,6 +222,7 @@
 
 
 
+  # setup GIT
 
   ];
   programs.git = {
@@ -213,11 +232,15 @@
 
   };
 
+  # Setup Steam
+
   programs.steam = {
     enable = true;
 
   };
 
+ 
+ # Graphics Tablet Setup
 
   services.xserver = {
     enable = true;
@@ -248,6 +271,11 @@
     ];
 
   };
+
+
+  # Nvidia Setup
+
+  
   hardware.nvidia = {
     package = config.boot.kernelPackages.nvidiaPackages.stable;
     modesetting.enable = true;
