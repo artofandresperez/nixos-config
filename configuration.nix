@@ -69,8 +69,18 @@
     pulse.enable = true;
   };
 
+  services.blueman.enable = true;
+
   #enable flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];
+
+
+  # Enable Bluetooth
+
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
+
 
 
   # setup NUR
