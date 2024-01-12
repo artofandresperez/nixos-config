@@ -55,6 +55,13 @@
     layout = "us";
     xkbVariant = "";
   };
+
+  # FONTS
+
+  fonts.packages = with pkgs; [
+  (nerdfonts.override {fonts = ["JetBrainsMono"];})
+
+  ];
  
   # AUDIO
 
@@ -215,6 +222,8 @@
     buku
     # System Monitor 
     btop
+    # fuzzy finder
+    fzf
   ];
 
   # Setup Steam

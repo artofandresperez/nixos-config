@@ -75,6 +75,14 @@ in {
   
   programs.alacritty = {
     enable = true;
+    settings = {
+      Font = {
+        normal = {
+          family = "JetBrainsMono";
+          style = "Regular";
+        };
+      };
+    };
 
   };
   programs.firefox = {
