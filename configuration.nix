@@ -56,6 +56,10 @@
     xkbVariant = "";
   };
 
+  services.input-remapper = {
+    enable = true;
+  };
+
   # FONTS
 
   fonts.packages = with pkgs; [
@@ -237,6 +241,10 @@
     gh
     #markdown render
     glow
+    # unzipping .zip files
+    unzip
+    # easy cli for mounting drives
+    bashmount
   ];
 
   # Setup Steam
