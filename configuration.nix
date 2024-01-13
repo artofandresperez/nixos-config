@@ -231,6 +231,12 @@
     btop
     # fuzzy finder
     fzf
+    #downloads 
+    wget
+    #github
+    gh
+    #markdown render
+    glow
   ];
 
   # Setup Steam

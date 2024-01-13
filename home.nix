@@ -100,13 +100,7 @@ in {
     recursive = true;
 
   };
-  
-  programs.gh = {
-    enable = true;
-    settings.editor = "nvim";
 
-  };
- 
 
   xsession.windowManager.i3 = {
     enable = true;
