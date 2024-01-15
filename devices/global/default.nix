@@ -57,6 +57,15 @@
     EDITOR = "nvim";
 
   };
+
+  # enable nix-ld to make binary executables find their libraries
+  programs.nix-ld.enable = true;
+
+  programs.nix-ld.libraries = with pkgs; [
+
+
+
+  ];
  
   #enable flakes
   nix.settings.experimental-features = ["nix-command" "flakes"];

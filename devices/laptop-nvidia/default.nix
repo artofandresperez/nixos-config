@@ -12,6 +12,7 @@
     ../../packages/gui/gaming.nix
     ../../packages/virtualization/default.nix
     ../../packages/window-managers/i3
+    ../../packages/dev
 
   ];
 
