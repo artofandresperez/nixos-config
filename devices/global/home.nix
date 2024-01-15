@@ -99,7 +99,7 @@
     recursive = true;
 
   };
-  home.file."./vifm" = {
+  home.file."./.vifm" = {
     source = ../../dotfiles/.vifm;
     recursive = true;
   };

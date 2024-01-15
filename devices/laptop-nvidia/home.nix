@@ -11,7 +11,7 @@
   ];
 
 
-  home.file."./xinitrc" = {
+  home.file."./.xinitrc" = {
     source = ../../dotfiles/.xinitrc;
   };
   
