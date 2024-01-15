@@ -33,7 +33,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.amoeba = import ./home.nix;
+            home-manager.users.amoeba = import ./devices/laptop-nvidia/home.nix;
           }
           nur.nixosModules.nur
           ];

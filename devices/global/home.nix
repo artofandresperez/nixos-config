@@ -1,12 +1,7 @@
-{ config, lib , pkgs, ... }:
-let 
-mod = "Mod4";
+{ config , lib , pkgs, ...}:
+{
 
-in {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
-  home.username = "amoeba";
-  home.homeDirectory = "/home/amoeba";
+  # Home Manager needs a bit of information about you and the paths it should manage.
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -70,6 +65,12 @@ in {
     GIT_EDITOR = "nvim";
   };
 
+
+  home.username = "amoeba";
+  home.homeDirectory = "/home/amoeba";
+
+
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   
@@ -85,39 +86,20 @@ in {
     };
 
   };
-  programs.firefox = {
-    enable = true;
 
-  };
+
   programs.neovim = {
     enable = true;
-    extraConfig = ":luafile ./nvim-config/init.lua";
+    extraConfig = ":luafile ../../nvim-config/init.lua";
 
 
   };
-  home.file."./.config/nvim/" = {
-    source = ./nvim-config;
+  home.file."./.config/nvim" = {
+    source = ../../nvim-config;
     recursive = true;
 
   };
 
-
-  xsession.windowManager.i3 = {
-    enable = true;
-    config = {
-      modifier = "Mod4";
-      keybindings = lib.mkOptionDefault {
-        "${mod}+d" = "exec dmenu_run";
-        "Mod4+Return" = "exec alacritty";
-	"Mod4+Shift+P" = "exec flameshot gui";
-        "Mod4+Shift+S" = "exec firefox";
-
-
-      };
-
-    };
-
-  };
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
       autoconnect = ["qemu:///system"];
@@ -125,9 +107,8 @@ in {
     };
 
   };
-  services.flameshot = {
-    enable = true;
-  };
+
+
   programs.tmux = {
     enable = true;
     extraConfig = "
@@ -136,6 +117,7 @@ in {
     ";
 
   };
+
   programs.taskwarrior = {
     enable = true;
 
@@ -156,5 +138,5 @@ in {
     };
 
   };
-  
+
 }
