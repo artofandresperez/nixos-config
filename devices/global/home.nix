@@ -99,6 +99,10 @@
     recursive = true;
 
   };
+  home.file."./vifm" = {
+    source = ../../dotfiles/.vifm;
+    recursive = true;
+  };
 
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {

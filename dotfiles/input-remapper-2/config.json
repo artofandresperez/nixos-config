@@ -1,0 +1,7 @@
+{
+    "version": "2.0.1",
+    "autoload": {
+        "DELL Technologies Keyboard": "new preset",
+        "SlimBlade Pro": "remap_middle"
+    }
+}
