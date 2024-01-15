@@ -26,9 +26,9 @@
 
     in { 
       nixosConfigurations = {
-        amoeba = lib.nixosSystem {
+        amoeba-ln = lib.nixosSystem {
           inherit system;
-          modules = [ ./configuration.nix 
+          modules = [ ./devices/laptop-nvidia/default.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -36,7 +36,6 @@
             home-manager.users.amoeba = import ./home.nix;
           }
           nur.nixosModules.nur
-
           ];
         };
 
