@@ -1,4 +1,4 @@
-{ config , lib , pkgs, ...}:
+{ config , lib , pkgs, inputs , ...}:
 {
 
   # Home Manager needs a bit of information about you and the paths it should manage.
@@ -59,6 +59,11 @@
   #
   #  /etc/profiles/per-user/amoeba/etc/profile.d/hm-session-vars.sh
   #
+
+
+
+
+
   home.sessionVariables = {
     EDITOR = "nvim";
     DEFAULT_BROWSER = "firefox";
@@ -73,6 +78,16 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+/*
+
+  imports = [
+    inputs.xremap-flake.homeManagerModules.default
+  ];
+
+*/
+
+
   
   programs.alacritty = {
     enable = true;

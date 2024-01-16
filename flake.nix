@@ -9,12 +9,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
 
     };
+
     nur.url = "github:nix-community/NUR";
+
+    xremap-flake.url = "github:xremap/nix-flake";
 
 
   };
 
-  outputs = { self, nixpkgs , home-manager, nur , ... }: 
+  outputs = { self, nixpkgs , home-manager, nur , ... }@inputs: 
     let 
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -27,6 +30,9 @@
     in { 
       nixosConfigurations = {
         amoeba-ln = lib.nixosSystem {
+          specialArgs = {
+            inherit inputs ;
+          };
           inherit system;
           modules = [ ./devices/laptop-nvidia/default.nix
           home-manager.nixosModules.home-manager

@@ -1,9 +1,11 @@
-{config, pkgs , ...}:
+{config, pkgs , inputs , ...}:
 {
   imports = 
   [
     ../../packages/cli/default.nix
+    inputs.xremap-flake.nixosModules.default
   ];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -99,4 +101,29 @@
   programs.dconf.enable = true;
 
   system.stateVersion = "23.11"; # Did you read the comment?
+
+
+  services.xremap = {
+    withHypr = true;
+    userName = "amoeba";
+    config = {
+      keymap = [
+      {
+        name = "main remaps";
+        remap  = {
+          "KEY_CAPSLOCK" = "KEY_LEFTCTRL";
+        };
+      }
+      ];
+    };
+  };
+
+  hardware.uinput.enable = true;
+  users.groups.uinput.members =  [ "amoeba" ] ;
+  users.groups.input.members = [ "amoeba" ] ;
+
+
+
+
+
 }

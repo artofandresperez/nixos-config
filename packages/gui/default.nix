@@ -18,9 +18,7 @@
     zoom-us
   ];
 
-  services.input-remapper = {
-    enable = true;
-  };
+
 
 
 }
