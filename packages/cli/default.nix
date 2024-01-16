@@ -47,6 +47,10 @@
     unzip
     # easy cli for mounting drives
     bashmount
+    # check usb devices
+    usbutils
+    #test events
+    evtest
 
   ];
 

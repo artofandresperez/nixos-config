@@ -1,4 +1,4 @@
-{config, pkgs , ...}:
+{config, inputs , pkgs , ...}:
 {
   imports = [
     ./hardware-configuration.nix
@@ -14,6 +14,7 @@
     ../../packages/window-managers/i3
     ../../packages/dev
 
+    inputs.xremap-flake.nixosModules.default
   ];
 
   networking.hostName = "amoeba-laptop-01"; # Define your hostname.
@@ -22,6 +23,41 @@
   
   services.upower.ignoreLid = true;
   services.logind.lidSwitch = "ignore";
+
+  services.input-remapper = {
+
+    enable = true;
+  };
+
+
+  services.xremap = {
+    withHypr = true;
+    userName = "amoeba";
+    config = {
+      modmap = [
+      {
+        name = "laptop-remap";
+        #device.only = ["event1"];
+        remap  = {
+          "KEY_CAPSLOCK" = "KEY_LEFTSHIFT";
+          "KEY_LEFTSHIFT" = "KEY_LEFTCTRL";
+        };
+      }
+      ];
+      keymap = [
+
+      {
+        name = "mouse-remap";
+        remap = {
+          "BTN_SIDE" = "BTN_MIDDLE";
+        };
+
+      }
+      ];
+      
+    };
+  };
+
 
 
 }
