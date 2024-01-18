@@ -11,4 +11,13 @@
   };
   
 
+  environment.systemPackages = with pkgs;[
+    #xorg clipboard manager
+    xclip
+
+
+
+  ];
+  
+
 }

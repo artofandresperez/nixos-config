@@ -16,7 +16,12 @@
     # Work apps
     slack
     zoom-us
+    obs-studio
+    # x2goclient # need to firgure this out at some point
+
   ];
+
+  # services.x2goserver.enable = true; # same goes for this
 
 
 
