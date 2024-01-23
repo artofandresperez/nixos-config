@@ -119,11 +119,6 @@
     recursive = true;
   };
 
-  home.file."./.config.alacritty.yml" = {
-    source = ../../dotfiles/alacritty.yml;
-    recursive = false;
-  };
-
   dconf.settings = {
     "org/virt-manager/virt-manager/connections" = {
       autoconnect = ["qemu:///system"];
