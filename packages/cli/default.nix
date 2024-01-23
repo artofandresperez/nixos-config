@@ -51,6 +51,8 @@
     usbutils
     #test events
     evtest
+    # git manager cli
+    lazygit
 
   ];
 
