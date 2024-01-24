@@ -4,8 +4,11 @@
 
   imports = [
   ../global/home.nix
-  ../../packages/window-managers/i3/home.nix
   ../../packages/gui/home.nix
+
+    # Pick a window manager
+  ../../packages/window-managers/i3/home.nix
+  #../../packages/window-managers/hyprland/home.nix
   
 
   ];

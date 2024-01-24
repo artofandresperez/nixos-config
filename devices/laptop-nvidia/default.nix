@@ -11,9 +11,13 @@
     ../../packages/gui/default.nix
     ../../packages/gui/gaming.nix
     ../../packages/virtualization/default.nix
-    ../../packages/window-managers/i3
     ../../packages/dev
     ../../packages/gui/cg.nix
+    
+        # Pick a window manager
+
+    ../../packages/window-managers/i3
+    #../../packages/window-managers/hyprland
 
     inputs.xremap-flake.nixosModules.default
   ];
