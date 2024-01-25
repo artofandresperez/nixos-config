@@ -97,10 +97,32 @@
           family = "JetBrainsMono";
           style = "Regular";
         };
+        bold = {
+          family = "JetBrainsMono";
+          style = "Regular";
+        };
+        italic = {
+          family = "JetBrainsMono";
+          style = "Regular";
+        };
       };
+      WINIT_X11_SCALE_FACTOR = "1";
     };
 
   };
+
+
+  programs.kitty = {
+    enable = true;
+    font = {
+      package = pkgs.nerdfonts;
+      name = "JetBrainsMono";
+      size = 10;
+    };
+
+  };
+
+  
 
 
   programs.neovim = {

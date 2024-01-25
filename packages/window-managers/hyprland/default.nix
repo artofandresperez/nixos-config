@@ -11,8 +11,8 @@
     wl-clipboard
     mako
     wdisplays
-    tofi
     xdg-utils 
+    bemenu
 
 
   ];

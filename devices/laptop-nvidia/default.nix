@@ -17,9 +17,8 @@
         # Pick a window manager
 
     #../../packages/window-managers/i3
-    #../../packages/window-managers/hyprland
+    ../../packages/window-managers/hyprland
     #../../packages/window-managers/dwm
-    ../../packages/window-managers/dwl
 
     inputs.xremap-flake.nixosModules.default
   ];

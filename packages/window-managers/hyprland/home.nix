@@ -21,7 +21,7 @@ in
 
       "$mod" = "SUPER";
       bind = [
-        "SUPER,d,exec,tofi"
+        "SUPER,d,exec,bemenu-run"
         "SUPER_SHIFT,S,exec,firefox"
         "SUPER,RETURN,exec,alacritty"
 
