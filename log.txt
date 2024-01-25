@@ -1,0 +1,39 @@
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+Running phase: unpackPhase
+unpacking source archive /nix/store/iwn60lzqavbfr5klcdaf084xvw1fj306-source
+source root is source
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+Running phase: configurePhase
+no configure script, doing nothing
+@nix { "action": "setPhase", "phase": "buildPhase" }
+Running phase: buildPhase
+build flags: SHELL=/nix/store/q8qq40xg2grfh9ry1d9x4g7lq4ra7n81-bash-5.2-p21/bin/bash PKG_CONFIG=pkg-config WAYLAND_SCANNER=wayland-scanner PREFIX=\$\(out\) MANDIR=\$\(man\)/share/man XWAYLAND=-DXWAYLAND XLIBS=xcb\ xcb-icccm
+cp config.def.h config.h
+wayland-scanner server-header \
+	`pkg-config --variable=pkgdatadir wayland-protocols`/stable/xdg-shell/xdg-shell.xml xdg-shell-protocol.h
+wayland-scanner server-header \
+	protocols/wlr-layer-shell-unstable-v1.xml wlr-layer-shell-unstable-v1-protocol.h
+gcc  `pkg-config --cflags wlroots wayland-server xkbcommon libinput xcb xcb-icccm` -I. -DWLR_USE_UNSTABLE -D_POSIX_C_SOURCE=200809L -DVERSION=\"`git describe --tags --dirty 2>/dev/null || echo 0.4`\" -DXWAYLAND -pedantic -Wall -Wextra -Wdeclaration-after-statement -Wno-unused-parameter -Wno-sign-compare -Wshadow -Wunused-macros -Werror=strict-prototypes -Werror=implicit -Werror=return-type -Werror=incompatible-pointer-types -O1 -c dwl.c
+In file included from [01m[Kdwl.c:401[m[K:
+[01m[Kconfig.h:45:86:[m[K [01;35m[Kwarning: [m[Kexcess elements in struct initializer
+   45 |         { NULL,       0.55, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   [01;35m[K-[m[K1,  -1 },
+      |                                                                                      [01;35m[K^[m[K
+[01m[Kconfig.h:45:86:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kmonrules[0][m[K')
+[01m[Kconfig.h:45:91:[m[K [01;35m[Kwarning: [m[Kexcess elements in struct initializer
+   45 |         { NULL,       0.55, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  [01;35m[K-[m[K1 },
+      |                                                                                           [01;35m[K^[m[K
+[01m[Kconfig.h:45:91:[m[K [01;36m[Knote: [m[K(near initialization for '[01m[Kmonrules[0][m[K')
+[01m[Kdwl.c:407:44:[m[K [01;31m[Kerror: [m[K'[01m[Ktags[m[K' undeclared here (not in a function); did you mean '[01m[Ktag[m[K'?
+  407 | struct NumTags { char limitexceeded[LENGTH([01;31m[Ktags[m[K) > 31 ? -1 : 1]; };
+      |                                            [01;31m[K^~~~[m[K
+[01m[Kdwl.c:68:41:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KLENGTH[m[K'
+   68 | #define LENGTH(X)               (sizeof [01;36m[KX[m[K / sizeof X[0])
+      |                                         [01;36m[K^[m[K
+[01m[Kconfig.h:20:12:[m[K [01;35m[Kwarning: [m[K'[01m[Klog_level[m[K' defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   20 | static int [01;35m[Klog_level[m[K = WLR_ERROR;
+      |            [01;35m[K^~~~~~~~~[m[K
+make: *** [Makefile:60: dwl.o] Error 1

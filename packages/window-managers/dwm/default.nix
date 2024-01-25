@@ -21,7 +21,7 @@
     windowManager.dwm = {
       enable = true;
       package = pkgs.dwm.overrideAttrs {
-        src = ./dwm;
+        src = ./dwm-src;
       };
 
     };

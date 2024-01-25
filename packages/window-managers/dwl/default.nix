@@ -14,13 +14,24 @@
     tofi
     xdg-utils 
     dwl
+    wlr-randr
+
 
 
   ];
-  nixpkgs.overlays = [ ( final: prev: { dwl = prev.dwl.overrideAttrs { 
-    patches = [ ]; 
-    configFile = ./config.h;
-  }; }) ];
+  
+ 	  nixpkgs.overlays = [
+	    (
+	      final: prev:
+	        {
+	          dwl = prev.dwl.override { 
+              conf = ./config.h; 
+              #src = ./dwl-scr;
+
+              };
+	        }
+	    )
+	  ];
 
 
 }
