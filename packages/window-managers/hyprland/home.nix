@@ -57,9 +57,11 @@ in
       ];
       
       bindm = [
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
       ];
 
-#      "animation" = "global,0";
+      "animation" = "global,0";
 
 
       general = {
@@ -85,11 +87,8 @@ in
     systemd.enable = true;
   };
 
-  home.file."./.config/waybar/config" = {
-    source = ../../../dotfiles/waybar/config;
-  };
-  home.file."./.config/waybar/style.css" = {
-    source = ../../../dotfiles/waybar/style.css;
+  home.file."./.config/waybar" = {
+    source = ../../../dotfiles/waybar;
   };
 
 
