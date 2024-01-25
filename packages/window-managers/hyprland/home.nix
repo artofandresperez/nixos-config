@@ -21,14 +21,56 @@ in
 
       "$mod" = "SUPER";
       bind = [
-        "SUPER,d,exec,bemenu-run"
-        "SUPER_SHIFT,S,exec,firefox"
-        "SUPER,RETURN,exec,alacritty"
+        "$mod,d,exec,rofi -show run"
+        "$mod_SHIFT,S,exec,firefox"
+        "$mod,RETURN,exec,alacritty"
+        "$mod_SHIFT,Q,killactive"
 
+
+        "$mod_SHIFT,P, exec,  grim -g \"$(slurp -d)\" - | wl-copy"
+
+
+          #setup workspaces
+
+        "$mod,1,workspace,1"
+        "$mod,2,workspace,2"
+        "$mod,3,workspace,3"
+        "$mod,4,workspace,4"
+        "$mod,5,workspace,5"
+        "$mod,6,workspace,6"
+        "$mod,7,workspace,7"
+        "$mod,8,workspace,8"
+        "$mod,9,workspace,9"
+        "$mod,0,workspace,0"
+        
+
+        "$mod_SHIFT,1,movetoworkspace,1"
+        "$mod_SHIFT,2,movetoworkspace,2"
+        "$mod_SHIFT,3,movetoworkspace,3"
+        "$mod_SHIFT,4,movetoworkspace,4"
+        "$mod_SHIFT,5,movetoworkspace,5"
+        "$mod_SHIFT,6,movetoworkspace,6"
+        "$mod_SHIFT,7,movetoworkspace,7"
+        "$mod_SHIFT,8,movetoworkspace,8"
+        "$mod_SHIFT,9,movetoworkspace,9"
+        "$mod_SHIFT,0,movetoworkspace,0"
       ];
       
       bindm = [
       ];
+
+#      "animation" = "global,0";
+
+
+      general = {
+        gaps_in = 0;
+        gaps_out = 0;
+        border_size = 2;
+      };
+
+      misc = {
+        force_default_wallpaper = 0;
+      };
 
 
       
@@ -36,11 +78,18 @@ in
     };
 
   };
+
+
   programs.waybar = {
     enable = true;
     systemd.enable = true;
+  };
 
-
+  home.file."./.config/waybar/config" = {
+    source = ../../../dotfiles/waybar/config;
+  };
+  home.file."./.config/waybar/style.css" = {
+    source = ../../../dotfiles/waybar/style.css;
   };
 
 

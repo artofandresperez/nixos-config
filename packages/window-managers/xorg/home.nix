@@ -38,5 +38,8 @@ in
 
   };
 
+  services.flameshot = {
+    enable = true;
+  };
 }
 

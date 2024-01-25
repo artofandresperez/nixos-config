@@ -12,11 +12,9 @@
     mako
     wdisplays
     xdg-utils 
-    bemenu
-
-
+    rofi-wayland
+    libnotify
   ];
-
 
 
 }
