@@ -9,6 +9,7 @@
     blender
     libsForQt5.kdenlive
     krita
+    #houdini
   ];
 
 

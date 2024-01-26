@@ -14,6 +14,7 @@
     xdg-utils 
     rofi-wayland
     libnotify
+    wlr-randr
   ];
 
 

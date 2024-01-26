@@ -119,6 +119,7 @@
       name = "JetBrainsMono";
       size = 10;
     };
+    theme = "Galaxy" ;
 
   };
 

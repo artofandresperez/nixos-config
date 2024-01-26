@@ -51,6 +51,7 @@
   (nerdfonts.override {fonts = ["JetBrainsMono"];})
 
   ];
+
   fonts.fontDir.enable = true;
 
   # ENV Vars

@@ -28,6 +28,7 @@ in
 
 
         "$mod_SHIFT,P, exec,  grim -g \"$(slurp -d)\" - | wl-copy"
+        "$mod,Z,exec,makoctl dismiss -a"
 
 
           #setup workspaces

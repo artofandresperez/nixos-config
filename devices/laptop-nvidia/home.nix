@@ -8,8 +8,9 @@
 
     # Pick a window manager
   #../../packages/window-managers/i3/home.nix
-  ../../packages/window-managers/hyprland/home.nix
+  #../../packages/window-managers/hyprland/home.nix
   #../../packages/window-managers/dwm/home.nix
+  ../../packages/window-managers/sway/home.nix
   
 
   ];
