@@ -32,14 +32,17 @@ in
 
 
       };
-      bars = [];
+      #bars = [];
       
 
     };
+
+    /*
     extraConfig = "
       exec polybar \n
 
     ";
+    */
 
   };
 

@@ -17,12 +17,17 @@ in
       # Use kitty as default terminal
       terminal = "kitty"; 
       startup = [
-        {command = "firefox";}
       ];
       keybindings = lib.mkDefault {
         "${mod}+Return" = "exec alacritty";
         "${mod}+Shift+q" = "kill";
         "${mod}+d" = "exec bemenu-run";
+        "${mod}+Shift+s" = "exec vieb";
+
+
+        "${mod}+Shift+p" = "exec grim -g \"$(slurp -d)\" - | wl-copy";
+        "${mod}+z" = "exec makoctl dismiss -a";
+
 
 
         "${mod}+1" = "workspace number 1";

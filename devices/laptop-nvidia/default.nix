@@ -4,6 +4,7 @@
     ./hardware-configuration.nix
     ../global
     ../../packages/audio/pipewire.nix
+    #../../packages/audio/pulse.nix
     ../../packages/input/bluetooth.nix
     ../../packages/graphics/nvidia-optimus.nix
     ../../packages/input/graphics-tablets
@@ -16,11 +17,11 @@
     
         # Pick a window manager
 
-    #../../packages/window-managers/i3
+    ../../packages/window-managers/i3
     #../../packages/window-managers/hyprland
     #../../packages/window-managers/dwm
     #../../packages/window-managers/dwl
-    ../../packages/window-managers/sway
+    #../../packages/window-managers/sway
 
     inputs.xremap-flake.nixosModules.default
   ];

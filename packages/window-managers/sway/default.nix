@@ -24,6 +24,7 @@ in{
     wlr-randr
     bemenu
     xdg-desktop-portal-wlr
+    wdisplays
     ];
 
 

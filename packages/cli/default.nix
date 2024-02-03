@@ -53,6 +53,7 @@
     evtest
     # git manager cli
     lazygit
+    # CLI browser
 
   ];
 

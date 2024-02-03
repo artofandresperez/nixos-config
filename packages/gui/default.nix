@@ -19,6 +19,8 @@
     obs-studio
     # x2goclient # need to firgure this out at some point
     wezterm
+    #browsers
+    vieb
 
   ];
 
