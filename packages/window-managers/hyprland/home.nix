@@ -7,7 +7,7 @@ in
     enable = true;
 
     package = pkgs.hyprland;
-    enableNvidiaPatches = true;
+    #enableNvidiaPatches = true;
 
     xwayland.enable = true;
     systemd.enable = true;

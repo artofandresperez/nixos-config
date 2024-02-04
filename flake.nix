@@ -29,6 +29,7 @@
 
     in { 
       nixosConfigurations = {
+
         amoeba-ln = lib.nixosSystem {
           specialArgs = {
             inherit inputs ;
@@ -44,7 +45,21 @@
           nur.nixosModules.nur
           ];
         };
-
+        amoeba-dn = lib.nixosSystem {
+          specialArgs = {
+            inherit inputs ;
+          };
+          inherit system;
+          modules = [ ./devices/desktop-nvidia
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.amoeba = import ./devices/desktop-nvidia/home.nix;
+          }
+          nur.nixosModules.nur
+          ];
+        };
       };
     };
 
