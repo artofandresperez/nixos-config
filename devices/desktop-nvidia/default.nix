@@ -12,7 +12,6 @@
     ../../packages/gui/cg.nix
     ../../packages/gui/gaming.nix
     ../../packages/dev
-    ../../packages/remote-desktop
     
         # Pick a window manager
 
