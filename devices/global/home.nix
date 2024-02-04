@@ -66,7 +66,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
-    DEFAULT_BROWSER = "firefox";
+    DEFAULT_BROWSER = "vieb";
     GIT_EDITOR = "nvim";
   };
 

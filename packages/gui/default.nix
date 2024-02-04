@@ -21,6 +21,8 @@
     wezterm
     #browsers
     vieb
+    # password manager
+    _1password-gui
 
   ];
 

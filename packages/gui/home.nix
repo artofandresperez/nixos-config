@@ -13,5 +13,8 @@
     recursive  = true;
 
   };
+  home.file."./.config/Vieb/viebrc" = {
+    source  = ../../dotfiles/viebrc; 
+  };
 
 }
