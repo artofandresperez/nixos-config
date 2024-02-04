@@ -3,12 +3,14 @@
   imports = [
     ./hardware-configuration.nix
     ../global
-    #../../packages/graphics/nvidia-desktop.nix
+    ../../packages/graphics/nvidia-desktop.nix
     ../../packages/audio/pipewire.nix
     ../../packages/input/bluetooth.nix
     #../../packages/input/graphics-tablets
     ../../packages/cli/default.nix
     ../../packages/gui/default.nix
+    ../../packages/gui/cg.nix
+    ../../packages/gui/gaming.nix
     ../../packages/dev
     
         # Pick a window manager
@@ -22,5 +24,11 @@
   ];
 
   networking.hostName = "amoeba-desktop-01"; # Define your hostname.
+  environment.variables = {
+    GDK_SCALE = "2";
+    GDK_DPI_SCALE = ".5";
+  };
+
+
 
 }

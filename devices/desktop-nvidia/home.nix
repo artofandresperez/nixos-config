@@ -16,7 +16,7 @@
   ];
 
   home.file."./.xinitrc" = {
-    source = ../../dotfiles/.xinitrc-i3;
+    source = ../../dotfiles/.xinitrc-i3-hidpi;
   };
   
 }
