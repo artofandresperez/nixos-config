@@ -7,12 +7,16 @@
   ];
 
   environment.systemPackages  = with pkgs;[   
-    nomachine-client
+    remmina
 
   ];
 
-  # services.x2goserver.enable = true; # same goes for this
-
+  services.xrdp = {
+    enable = true;
+    defaultWindowManager = "startx";
+    openFirewall = true;
+    
+  };
 
 
 
