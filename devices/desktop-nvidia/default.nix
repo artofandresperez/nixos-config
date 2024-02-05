@@ -29,6 +29,11 @@
     GDK_DPI_SCALE = ".5";
   };
 
-
+  boot.extraModulePackages = [
+    config.boot.kernelPackages.v4l2loopback.out
+  ];
+  boot.kernelModules = [
+    "v4l2loopback"
+  ];
 
 }

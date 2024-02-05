@@ -17,4 +17,13 @@
     source  = ../../dotfiles/viebrc; 
   };
 
+
+  programs.obs-studio = {
+    enable = true;
+    plugins = [
+
+    ];
+
+  };
+
 }
