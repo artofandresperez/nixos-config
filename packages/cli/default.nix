@@ -53,8 +53,12 @@
     evtest
     # git manager cli
     lazygit
-    # CLI browser
-
+    #exfat utils
+    exfat
+    # ntfs utils
+    ntfs3g
+    # Video player
+    mpv
   ];
 
 

@@ -10,6 +10,8 @@
     libsForQt5.kdenlive
     krita
     houdini
+    davinci-resolve
+
   ];
 
 
