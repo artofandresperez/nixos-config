@@ -61,13 +61,6 @@ in
           interval = "60";
           command  = "date \"+%r\"";
         };
-        TEST =  {
-          full_text = "TEST";
-          interval = "once";
-          command = "bash ${scripts}/test.sh" ;
-
-
-        };
 
 
       };
