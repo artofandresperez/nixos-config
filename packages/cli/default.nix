@@ -1,8 +1,6 @@
 {config , pkgs , ...}:
 {
   environment.systemPackages = with pkgs;[
-    # CLI browser
-    lynx
      # Information about hardware config
     lshw
     # file browser
@@ -25,8 +23,6 @@
     croc 
     # email client
     mutt
-    # Journaling Cli
-    jrnl
     # Cli benchmarking tool
     hyperfine
     # accounting 
@@ -41,8 +37,8 @@
     wget
     #github
     gh
-    #markdown render
-    glow
+    # markdown preview
+    litemdview
     # unzipping .zip files
     unzip
     # easy cli for mounting drives
@@ -59,6 +55,18 @@
     ntfs3g
     # Video player
     mpv
+    # Task manager
+    taskwarrior
+    # time tracker
+    watson
+    # git project neofetch
+    onefetch
+    # better cat
+    bat
+
+
+
+    
   ];
 
 

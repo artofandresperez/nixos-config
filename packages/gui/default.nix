@@ -1,5 +1,4 @@
 
-
 {config , pkgs , ...}:
 {
   imports = [ 
@@ -22,7 +21,6 @@
     vieb
     # password manager
     _1password-gui
-    # loopback for obs
 
   ];
 

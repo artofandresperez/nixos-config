@@ -12,13 +12,16 @@ in
 
   xsession.windowManager.i3 = {
     enable = true;
+    package = pkgs.i3-gaps;
     config = {
+      
       modifier = "Mod4";
       keybindings = lib.mkOptionDefault {
         "${mod}+d" = "exec dmenu_run";
         "Mod4+Return" = "exec alacritty";
 	      "Mod4+Shift+P" = "exec flameshot gui";
         "Mod4+Shift+S" = "exec firefox";
+        "Mod4+Shift+O" = "sticky toggle";
         /*
         "XF86AudioRaiseVolume" = "exec 'pamixer -i 5'";
         "XF86AudioLowerVolume" = "exec amixer -d 5";
@@ -29,20 +32,14 @@ in
         "Shift+Mod4+minus" = "exec brightnessctl set 0";
         "Shift+Mod4+plus" = "exec brightnessctl set 800";
         */
-
-
       };
-      #bars = [];
-      
 
     };
 
-    /*
     extraConfig = "
-      exec polybar \n
-
+      default_border pixel 1 \n
+      default_floating_border pixel 1
     ";
-    */
 
   };
 

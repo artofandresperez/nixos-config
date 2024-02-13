@@ -11,6 +11,10 @@
     krita
     houdini
     davinci-resolve
+    inkscape-with-extensions
+    digikam
+    darktable
+    nomacs
 
   ];
 
