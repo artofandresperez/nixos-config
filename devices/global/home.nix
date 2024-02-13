@@ -129,14 +129,14 @@
   programs.neovim = {
     enable = true;
     extraConfig = ":luafile ../../nvim-config/init.lua";
-
-
   };
+
   home.file."./.config/nvim" = {
     source = ../../nvim-config;
     recursive = true;
 
   };
+
   home.file."./.vifm" = {
     source = ../../dotfiles/.vifm;
     recursive = true;

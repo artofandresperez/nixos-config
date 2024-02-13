@@ -2,7 +2,6 @@
 
 let 
 mod = "Mod4";
-scripts = "~/.config/i3blocks/scripts";
 
 in 
 {
@@ -53,31 +52,33 @@ in
   };
 
   programs.i3blocks = {
-
     enable = true;
     bars = {
-      config = {
-        TIME  = {
-          interval = "60";
-          command  = "date \"+%r\"";
-        };
-        TEST =  {
-          full_text = "TEST";
-          interval = "once";
-          command = "bash ${scripts}/test.sh" ;
-
-
-        };
-
-
-      };
+  top = {
+    # The title block
+    title = {
+      interval = "persist";
+      command = "xtitle -s";
+    };
   };
-
+  bottom = {
+    time = {
+      command = "date +%r";
+      interval = 1;
+    };
+    # Make sure this block comes after the time block
+    date = lib.hm.dag.entryAfter [ "time" ] {
+      command = "date +%d";
+      interval = 5;
+    };
+    # And this block after the example block
+    example = lib.hm.dag.entryAfter [ "date" ] {
+      command = "echo hi $(date +%s)";
+      interval = 3;
+    };
   };
+};
 
-  home.file."./.config/i3blocks/scripts" = {
-    source  = ../../../dotfiles/i3blocks-scripts;
-    recursive = true;
   };
 
 

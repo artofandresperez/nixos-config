@@ -63,6 +63,8 @@
     onefetch
     # better cat
     bat
+    # Timer
+    timer
 
 
 
