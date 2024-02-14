@@ -74,6 +74,14 @@ in
           interval = "60";
           command  = "date \"+%r\"";
         };
+        GREYSCALE = {
+          full_text = "";
+          command = "xrandr --output DP-1 --set CTM \"1431655765,0,1431655765,0,1431655765,0,1431655765,0,1431655765,0,1431655765,0,1431655765,0,1431655765,0,1431655765,0\"";
+        };
+        NORMAL-COLOR = {
+          full_text = "";
+          command = "xrandr --output DP-1 --set CTM '0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1'";
+        };
       };
   };
 
