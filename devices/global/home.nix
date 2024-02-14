@@ -170,6 +170,8 @@
   };
   programs.git = {
     enable = true;
+    userName = "artofandresperez";
+    userEmail = "artofandresperez@gmail.com";
     extraConfig = {
       core = {
         editor = "nvim";

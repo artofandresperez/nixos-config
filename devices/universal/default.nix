@@ -6,14 +6,11 @@
     ../../packages/audio/pipewire.nix
     #../../packages/audio/pulse.nix
     ../../packages/input/bluetooth.nix
-    ../../packages/graphics/nvidia-optimus.nix
     ../../packages/input/graphics-tablets
     ../../packages/cli/default.nix
     ../../packages/gui/default.nix
     ../../packages/gui/gaming.nix
-    ../../packages/virtualization/default.nix
     ../../packages/dev
-   # ../../packages/gui/cg.nix
     
         # Pick a window manager
 
@@ -21,12 +18,12 @@
     #../../packages/window-managers/hyprland
     #../../packages/window-managers/dwm
     #../../packages/window-managers/dwl
-    #../../packages/window-managers/sway
+    ../../packages/window-managers/sway
 
     inputs.xremap-flake.nixosModules.default
   ];
 
-  networking.hostName = "amoeba-laptop-01"; # Define your hostname.
+  networking.hostName = "amoeba-portable"; # Define your hostname.
 
   # try to fix laptop lid power off thing
   
@@ -68,6 +65,6 @@
   };
 
 
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["intel"];
 
 }

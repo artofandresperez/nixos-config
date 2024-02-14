@@ -60,6 +60,21 @@
           nur.nixosModules.nur
           ];
         };
+        amoeba-uv = lib.nixosSystem {
+          specialArgs = {
+            inherit inputs ;
+          };
+          inherit system;
+          modules = [ ./devices/universal
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.amoeba = import ./devices/universal/home.nix;
+          }
+          nur.nixosModules.nur
+          ];
+        };
       };
     };
 

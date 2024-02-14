@@ -36,4 +36,6 @@
     "v4l2loopback"
   ];
 
+  services.xserver.videoDrivers = ["nvidia"];
+
 }
