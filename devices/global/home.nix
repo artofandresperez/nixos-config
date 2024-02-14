@@ -92,11 +92,11 @@
   programs.alacritty = {
     enable = true;
     settings = {
+    /*
     Font.normal = {
           family = "JetBrainsMono";
           style = "Regular";
     };
-    /*
       Font = {
         normal = {
           family = "JetBrainsMono";
@@ -125,7 +125,12 @@
       name = "JetBrainsMono";
       size = 10;
     };
-    theme = "Galaxy" ;
+    theme = "Front End Delight" ;
+    settings = {
+      confirm_os_window_close = 0;
+    
+    };
+
 
   };
 

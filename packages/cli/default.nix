@@ -67,6 +67,10 @@
     timer
     # font previewer
     fontpreview
+    # 7zip unarchiver
+    p7zip
+    # make zips
+    zip
 
 
 

@@ -24,7 +24,7 @@ in
       modifier = "Mod4";
       keybindings = lib.mkOptionDefault {
         "${mod}+d" = "exec dmenu_run -nb '#222222' -sf '#eeeeee' -sb '#6d6d6d' -nf '#bbbbbb'";
-        "Mod4+Return" = "exec alacritty";
+        "Mod4+Return" = "exec kitty";
 	      "Mod4+Shift+P" = "exec flameshot gui";
         "Mod4+Shift+S" = "exec firefox";
         "Mod4+Shift+O" = "sticky toggle";
