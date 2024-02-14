@@ -92,6 +92,11 @@
   programs.alacritty = {
     enable = true;
     settings = {
+    Font.normal = {
+          family = "JetBrainsMono";
+          style = "Regular";
+    };
+    /*
       Font = {
         normal = {
           family = "JetBrainsMono";
@@ -106,7 +111,8 @@
           style = "Regular";
         };
       };
-      WINIT_X11_SCALE_FACTOR = "1";
+      #WINIT_X11_SCALE_FACTOR = "1";
+      */
     };
 
   };
