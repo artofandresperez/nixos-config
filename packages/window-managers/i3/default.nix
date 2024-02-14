@@ -21,6 +21,5 @@
   };
   environment.systemPackages = with pkgs;[
     dmenu
-
   ];
 }  
