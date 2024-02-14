@@ -65,6 +65,8 @@
     bat
     # Timer
     timer
+    # font previewer
+    fontpreview
 
 
 

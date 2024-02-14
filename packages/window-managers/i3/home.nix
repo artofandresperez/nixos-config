@@ -37,6 +37,19 @@ in
       bars =  [
         {
           statusCommand = "i3blocks";
+          colors = {
+            focusedWorkspace  = {
+              background = "#8a8a8a";
+              border = "#262626";
+              text = "#262626";
+
+            };
+
+          };
+          fonts = {
+            names = ["JetBrainsMono-NF-Regular"];
+            style = "Regular";
+          };
 
         }
       
@@ -61,8 +74,6 @@ in
           interval = "60";
           command  = "date \"+%r\"";
         };
-
-
       };
   };
 

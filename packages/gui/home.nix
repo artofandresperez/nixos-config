@@ -3,6 +3,17 @@
 
   programs.firefox = {
     enable = true;
+    profiles.default = {
+      settings = {
+        "layout.css.devPixelsPerPx" = .8;
+        "full-screen-api.ignore-widgets" = true;
+        "Default zoom" = 200;
+      };
+      
+      
+
+    };
+
 
   };
 
