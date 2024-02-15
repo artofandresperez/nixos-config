@@ -9,7 +9,6 @@
     blender
     libsForQt5.kdenlive
     krita
-    houdini
     davinci-resolve
     inkscape-with-extensions
     digikam

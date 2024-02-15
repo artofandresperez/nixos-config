@@ -10,6 +10,7 @@
     ../../packages/cli/default.nix
     ../../packages/gui/default.nix
     ../../packages/gui/cg.nix
+    ../../packages/gui/hou.nix
     ../../packages/gui/gaming.nix
     ../../packages/dev
     
