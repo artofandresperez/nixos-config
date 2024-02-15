@@ -71,6 +71,9 @@
     p7zip
     # make zips
     zip
+    # Battery
+    acpi
+
 
 
 

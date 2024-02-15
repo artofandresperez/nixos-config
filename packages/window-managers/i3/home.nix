@@ -148,6 +148,10 @@ in
           full_text = "";
           command = "xrandr --output DP-1 --set CTM '0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1'";
         };
+        BATTERY = {
+          interval = "60";
+          command = "python ${scripts}/battery.py";
+        };
       };
   };
 
