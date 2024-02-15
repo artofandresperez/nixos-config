@@ -13,7 +13,7 @@
     ../../packages/gui/gaming.nix
     ../../packages/virtualization/default.nix
     ../../packages/dev
-   # ../../packages/gui/cg.nix
+    ../../packages/gui/cg.nix
     
         # Pick a window manager
 
