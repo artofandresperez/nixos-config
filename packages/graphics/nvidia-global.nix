@@ -11,6 +11,11 @@
 
   ];
 
+  environment.variables = {
+    CUDA_PATH = "${pkgs.cudatoolkit}";
+  };
+
+
   nixpkgs.config.nvidia.acceptLicense = true;
 
   hardware.opengl = {

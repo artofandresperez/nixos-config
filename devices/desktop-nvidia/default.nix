@@ -13,6 +13,8 @@
     ../../packages/gui/hou.nix
     ../../packages/gui/gaming.nix
     ../../packages/dev
+    ../../packages/virtualization
+    ../../packages/cli/ssh.nix
     
         # Pick a window manager
 
