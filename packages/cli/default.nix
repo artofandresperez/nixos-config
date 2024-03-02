@@ -73,6 +73,11 @@
     zip
     # Battery
     acpi
+    #un rar
+    unrar
+    #steam tui
+    steam-tui
+    steamPackages.steamcmd
 
 
 
