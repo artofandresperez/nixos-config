@@ -21,7 +21,7 @@
     #../../packages/window-managers/hyprland
     #../../packages/window-managers/dwm
     #../../packages/window-managers/dwl
-    #../../packages/window-managers/sway
+    ../../packages/window-managers/sway
 
     inputs.xremap-flake.nixosModules.default
   ];

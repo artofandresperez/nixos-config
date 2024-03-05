@@ -22,6 +22,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+
   # Set your time zone.
   time.timeZone = "America/Los_Angeles";
 
@@ -39,7 +40,11 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-  
+
+
+
+  networking.firewall.enable = false;
+  networking.firewall.allowedUDPPortRanges = [ { from = 32768; to = 60999; } ];
   
 
   # Configure keymap in X11

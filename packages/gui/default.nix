@@ -21,6 +21,10 @@
     vieb
     # password manager
     _1password-gui
+    #chrome
+    google-chrome
+    # pdf
+    okular
 
   ];
 
