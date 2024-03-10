@@ -78,6 +78,9 @@
     #steam tui
     steam-tui
     steamPackages.steamcmd
+    # util
+    toybox
+    coreutils-full
 
 
 

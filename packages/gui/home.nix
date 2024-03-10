@@ -8,6 +8,8 @@
         "layout.css.devPixelsPerPx" = .8;
         "full-screen-api.ignore-widgets" = true;
         "Default zoom" = 200;
+        "full-screen-api.warning.timeout" = 0;
+        "ull-screen-api.transition.timeout" = 0;
       };
       
       

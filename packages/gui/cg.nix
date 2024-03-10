@@ -14,6 +14,7 @@
     digikam
     darktable
     nomacs
+    freecad
 
   ];
 

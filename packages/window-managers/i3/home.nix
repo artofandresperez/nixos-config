@@ -125,8 +125,12 @@ in
     };
 
     extraConfig = "
-      default_border pixel 1 \n
-      default_floating_border pixel 1 \n
+      default_border pixel 0 \n
+      default_floating_border pixel 0 \n
+      for_window [floating] border pixel 0  \n
+      for_window [tiling] border pixel 0 \n
+      new_window pixel 0 \n
+      for_window [class=\"\*\"] border pixel 0 \n
     ";
 
   };

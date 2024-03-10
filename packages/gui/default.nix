@@ -16,9 +16,6 @@
     slack
     zoom-us
     # x2goclient # need to firgure this out at some point
-    wezterm
-    #browsers
-    vieb
     # password manager
     _1password-gui
     #chrome
