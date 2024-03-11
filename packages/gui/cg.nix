@@ -7,7 +7,6 @@
   environment.systemPackages  = with pkgs;[   
     # Open source cg toolset
     blender
-    libsForQt5.kdenlive
     krita
     davinci-resolve
     inkscape-with-extensions
@@ -15,6 +14,7 @@
     darktable
     nomacs
     freecad
+    olive-editor
 
   ];
 

@@ -22,6 +22,10 @@
     google-chrome
     # pdf
     okular
+    # Email
+    thunderbird
+    # wireshark
+    wireshark
 
   ];
 
