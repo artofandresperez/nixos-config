@@ -26,8 +26,15 @@
     thunderbird
     # wireshark
     wireshark
-
+    # Project libre
+    projectlibre
+    # project manager cli
+    taskjuggler
+    # teamviewer
+    teamviewer
   ];
+
+  services.teamviewer.enable = true;
 
   # services.x2goserver.enable = true; # same goes for this
 

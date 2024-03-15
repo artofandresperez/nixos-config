@@ -58,7 +58,7 @@
     # Task manager
     taskwarrior
     # time tracker
-    watson
+    timewarrior
     # git project neofetch
     onefetch
     # better cat
@@ -81,6 +81,8 @@
     # util
     toybox
     coreutils-full
+    #tty browser 
+    browsh
 
 
 
