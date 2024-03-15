@@ -15,7 +15,7 @@
     # Work apps
     slack
     zoom-us
-    # x2goclient # need to firgure this out at some point
+    x2goclient # need to firgure this out at some point
     # password manager
     _1password-gui
     #chrome
@@ -31,12 +31,12 @@
     # project manager cli
     taskjuggler
     # teamviewer
-    teamviewer
+
   ];
 
-  services.teamviewer.enable = true;
+  #services.teamviewer.enable = true;
 
-  # services.x2goserver.enable = true; # same goes for this
+  services.x2goserver.enable = true; # same goes for this
 
 
 
