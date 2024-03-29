@@ -9,6 +9,7 @@
     # Pick a window manager
   ../../packages/window-managers/i3/home.nix
   ../../packages/window-managers/sway/home.nix
+  ../../packages/cli/home.nix
   
 
   ];
