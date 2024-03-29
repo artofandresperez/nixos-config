@@ -88,6 +88,19 @@
     ffmpeg
     # Himalaya email client
     himalaya
+    # file change run commands
+    entr
+    # Read and edit metadata
+    exiftool
+    # TUI browser
+    browsh
+    # - interacitve cheat sheet
+    navi
+    tldr
+
+
+    
+
 
 
 

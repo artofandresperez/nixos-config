@@ -167,6 +167,11 @@ in
           command = "python ${scripts}/bright-down.py";
 
         };
+        LOCK = {
+          full_text = "";
+          command = "i3lock -n -c 000000";
+
+        };
       };
   };
 
@@ -185,6 +190,12 @@ in
     enable = true;
 
   };
-
+/*
+  services.screen-locker = {
+    enable = true;
+    inactiveInterval = 1;
+    lockCmd = "\${pkgs.i3lock}/bin/i3lock -n -c 000000";
+  };
+*/
 
 }

@@ -16,10 +16,20 @@
     displayManager ={
       startx.enable = true;
 
+
+    };
+    xautolock = {
+      enable = true;
+
+
     };
     
   };
   environment.systemPackages = with pkgs;[
     dmenu
+    i3lock
+    xautolock
   ];
+
+
 }  
