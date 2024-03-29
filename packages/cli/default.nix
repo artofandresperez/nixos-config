@@ -97,6 +97,8 @@
     # - interacitve cheat sheet
     navi
     tldr
+    # correct
+    thefuck
 
 
     
