@@ -57,6 +57,7 @@
     mpv
     # Task manager
     taskwarrior
+    vit
     # time tracker
     timewarrior
     # git project neofetch
@@ -83,6 +84,11 @@
     coreutils-full
     #tty browser 
     browsh
+    # ffmpeg
+    ffmpeg
+    # Himalaya email client
+    himalaya
+
 
 
 
