@@ -167,11 +167,6 @@ in
           command = "python ${scripts}/bright-down.py";
 
         };
-        LOCK = {
-          full_text = "";
-          command = "i3lock -n -c 000000";
-
-        };
       };
   };
 
