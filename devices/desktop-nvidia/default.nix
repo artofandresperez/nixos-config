@@ -38,4 +38,7 @@
 
   services.xserver.videoDrivers = ["nvidia"];
 
+  programs.kitty.font.size = 20;
+
+
 }

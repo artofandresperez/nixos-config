@@ -123,7 +123,6 @@
     font = {
       package = pkgs.nerdfonts;
       name = "JetBrainsMono";
-      size = 10;
     };
     theme = "Front End Delight" ;
     settings = {

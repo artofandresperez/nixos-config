@@ -75,6 +75,21 @@
           nur.nixosModules.nur
           ];
         };
+        amoeba-tp = lib.nixosSystem {
+          specialArgs = {
+            inherit inputs ;
+          };
+          inherit system;
+          modules = [ ./devices/thinkpad
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.amoeba = import ./devices/thinkpad/home.nix;
+          }
+          nur.nixosModules.nur
+          ];
+        };
       };
     };
 
