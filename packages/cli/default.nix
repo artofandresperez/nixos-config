@@ -11,8 +11,6 @@
     brightnessctl
     # Grep stuff
     ripgrep
-    # email client
-    mutt
     # Calculator
     kalker
     # file usage manager
@@ -23,8 +21,6 @@
     fdupes
     # file transfer cli
     croc 
-    # email client
-    mutt
     # Cli benchmarking tool
     hyperfine
     # accounting 
