@@ -97,6 +97,8 @@
     tldr
     # correct
     thefuck
+    #investing
+    tickrs
 
 
     
