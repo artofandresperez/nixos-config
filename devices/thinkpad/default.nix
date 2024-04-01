@@ -11,6 +11,7 @@
     ../../packages/gui/default.nix
     ../../packages/gui/gaming.nix
     ../../packages/dev
+    ../../packages/gui/2d.nix
     
         # Pick a window manager
 
