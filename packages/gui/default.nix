@@ -19,10 +19,6 @@
     _1password-gui
     #chrome
     google-chrome
-    # Email
-    thunderbird
-    # wireshark
-    wireshark
     # Project libre
     projectlibre
     # project manager cli
