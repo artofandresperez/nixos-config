@@ -1,6 +1,8 @@
 {config , pkgs , ...}:
 {
   environment.systemPackages = with pkgs;[
+    # git
+    git
      # Information about hardware config
     lshw
     # file browser

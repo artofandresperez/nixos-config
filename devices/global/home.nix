@@ -178,6 +178,7 @@
   programs.watson = {
     enable = true;
   };
+  /*
   programs.git = {
     enable = true;
     userName = "artofandresperez";
@@ -192,5 +193,6 @@
     };
 
   };
+  */
 
 }
