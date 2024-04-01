@@ -1,12 +1,11 @@
 {config , pkgs , ...}:
 {
+  imports = [
+    ./lutris.nix
+  ];
 
 
   environment.systemPackages = with pkgs; [
-    # wine stuff 
-    lutris
-    wine
-    winetricks
     # virtualisation software
     qemu
     virt-manager

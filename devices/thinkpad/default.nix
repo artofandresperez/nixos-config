@@ -12,6 +12,8 @@
     ../../packages/gui/gaming.nix
     ../../packages/dev
     ../../packages/gui/2d.nix
+    ../../packages/gui/cad.nix
+    ../../packages/virtualization/lutris.nix
     
         # Pick a window manager
 
