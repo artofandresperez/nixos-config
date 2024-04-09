@@ -20,6 +20,7 @@
 
     ../../packages/window-managers/i3
     ../../packages/window-managers/sway
+    #../../packages/gui/pureref.nix
 
   ];
 
@@ -38,7 +39,6 @@
 
   services.xserver.videoDrivers = ["nvidia"];
 
-  programs.kitty.font.size = 20;
 
 
 }

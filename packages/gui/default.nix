@@ -25,6 +25,8 @@
     taskjuggler
     # vieb
     vieb
+    # download manager
+    varia
 
   ];
 

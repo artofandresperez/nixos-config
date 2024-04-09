@@ -37,6 +37,8 @@
     gh
     # markdown preview
     litemdview
+    # markdown convert
+    pandoc
     # unzipping .zip files
     unzip
     # easy cli for mounting drives
@@ -99,6 +101,8 @@
     thefuck
     #investing
     tickrs
+    # instagram downloader
+    instaloader
 
 
     
