@@ -103,6 +103,8 @@
     tickrs
     # instagram downloader
     instaloader
+    # search for nix packages
+    nix-index
 
 
     
