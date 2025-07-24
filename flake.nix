@@ -11,15 +11,15 @@
     wiremix = {
       url = "github:tsowell/wiremix";
       inputs.nixpkgs.follows = "nixpkgs";
-
     };
-    
+
+    zig.url = "github:mitchellh/zig-overlay";
   };
 
 
 
 
-  outputs = { self, nixpkgs , home-manager, wiremix , ...}: 
+  outputs = { self, nixpkgs , home-manager, wiremix ,zig, ...}: 
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -44,6 +44,7 @@
 	    {
 	      environment.systemPackages = [
 	        wiremix.packages.x86_64-linux.default
+          zig.packages.x86_64-linux.default 
 	      ];
 	    }
 
